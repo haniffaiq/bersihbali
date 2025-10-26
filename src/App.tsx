@@ -27,43 +27,43 @@ function App() {
     {
       icon: Home,
       title: 'Regular Home Cleaning',
-      description: 'Basic dusting, mopping, and tidying up',
+      description: 'Pembersihan ringan untuk menjaga rumah tetap rapi setiap hari. Termasuk sapu, pel, lap debu, dan dapur ringan.',
       duration: '2 Hours',
       price: 'Rp 150.000',
-      message: 'Halo BersihBali, saya mau pesan layanan Regular Home Cleaning untuk area [tulis lokasi Anda].'
+      message: 'Halo BersihBali 👋, saya ingin pesan *Regular Home Cleaning* untuk area [Lokasi Anda].'
     },
     {
       icon: Sparkles,
       title: 'Deep Cleaning',
-      description: 'Kitchen, bathroom, and furniture deep clean',
+      description: 'Pembersihan mendalam mencakup kamar mandi, dapur, dan furnitur. Cocok untuk rumah yang lama tidak dibersihkan.',
       duration: '4 Hours',
       price: 'Rp 300.000',
-      message: 'Halo BersihBali, saya mau pesan layanan Deep Cleaning untuk area [tulis lokasi Anda].'
+      message: 'Halo BersihBali 👋, saya ingin pesan *Deep Cleaning* untuk area [Lokasi Anda].'
     },
     {
       icon: Building2,
       title: 'Villa / Airbnb Cleaning',
-      description: 'Guest-ready preparation for properties',
+      description: 'Layanan khusus villa dan Airbnb, termasuk ganti linen, tata tempat tidur, dan bersihkan seluruh area agar siap untuk tamu.',
       duration: '3 Hours',
       price: 'Rp 250.000',
       popular: true,
-      message: 'Halo BersihBali, saya mau pesan layanan Villa/Airbnb Cleaning untuk area [tulis lokasi Anda].'
+      message: 'Halo BersihBali 👋, saya ingin pesan *Villa/Airbnb Cleaning* untuk area [Lokasi Anda].'
     },
     {
       icon: Package,
-      title: 'Move-in / Move-out',
-      description: 'Full deep clean and furniture polish',
+      title: 'Move-In / Move-Out Cleaning',
+      description: 'Paket lengkap untuk pindahan rumah atau kantor. Termasuk deep clean total dan poles furnitur agar siap huni.',
       duration: '5 Hours',
       price: 'Rp 400.000',
-      message: 'Halo BersihBali, saya mau pesan layanan Move-in/Move-out Cleaning untuk area [tulis lokasi Anda].'
+      message: 'Halo BersihBali 👋, saya ingin pesan *Move-In/Move-Out Cleaning* untuk area [Lokasi Anda].'
     },
     {
       icon: Shirt,
       title: 'Laundry & Linen',
-      description: 'Pickup and return within 24 hours',
+      description: 'Cuci dan setrika linen, sprei, dan handuk dengan layanan antar-jemput 24 jam. Praktis untuk villa dan Airbnb.',
       duration: 'Per Kg',
       price: 'Rp 20.000',
-      message: 'Halo BersihBali, saya mau pesan layanan Laundry & Linen untuk area [tulis lokasi Anda].'
+      message: 'Halo BersihBali 👋, saya ingin pesan *Laundry & Linen* untuk area [Lokasi Anda].'
     }
   ];
 
@@ -190,34 +190,44 @@ function App() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {services.map((service, index) => (
-              <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 relative">
+              <div key={index} className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-turquoise/30 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 relative group">
                 {service.popular && (
-                  <div className="absolute -top-4 right-6 bg-green-accent text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
-                    Popular
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg flex items-center space-x-1">
+                    <Star className="w-4 h-4 fill-current" />
+                    <span>Popular Choice</span>
                   </div>
                 )}
-                <div className="w-16 h-16 bg-turquoise/10 rounded-full flex items-center justify-center mb-6">
-                  <service.icon className="w-8 h-8 text-turquoise" />
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-gradient-to-br from-turquoise to-turquoise/70 rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="w-10 h-10 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed min-h-[4.5rem]">{service.description}</p>
+                  <div className="flex justify-center items-center space-x-6 mb-6 text-base bg-sand/50 py-3 px-6 rounded-full">
+                    <span className="text-gray-700 font-medium">{service.duration}</span>
+                    <span className="w-1 h-1 bg-gray-400 rounded-full"></span>
+                    <span className="text-3xl font-bold text-turquoise">{service.price}</span>
+                  </div>
+                  <a
+                    href={createWhatsAppLink(service.message)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-turquoise text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-turquoise/90 hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg group-hover:shadow-turquoise/40"
+                  >
+                    <MessageCircle className="w-6 h-6" />
+                    <span>Book via WhatsApp</span>
+                  </a>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
-                <p className="text-gray-600 mb-4">{service.description}</p>
-                <div className="flex justify-between items-center mb-6 text-sm">
-                  <span className="text-gray-500">{service.duration}</span>
-                  <span className="text-2xl font-bold text-turquoise">{service.price}</span>
-                </div>
-                <a
-                  href={createWhatsAppLink(service.message)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-turquoise text-white px-6 py-3 rounded-full font-semibold hover:bg-turquoise/90 transition-all flex items-center justify-center space-x-2"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                  <span>Book This Service</span>
-                </a>
               </div>
             ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-gray-600 text-lg">
+              Available 7 days a week, island-wide across Bali
+            </p>
           </div>
         </div>
       </section>
