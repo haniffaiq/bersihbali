@@ -12,7 +12,7 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const whatsappNumber = '6281234567890';
+  const whatsappNumber = '6281805456569';
 
   const createWhatsAppLink = (message: string) => {
     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
@@ -30,7 +30,7 @@ function App() {
       description: 'Pembersihan ringan untuk menjaga rumah tetap rapi setiap hari. Termasuk sapu, pel, lap debu, dan dapur ringan.',
       duration: '2 Hours',
       price: 'Rp 150.000',
-      message: 'Halo BersihBali 👋, saya ingin pesan *Regular Home Cleaning* untuk area [Lokasi Anda].'
+      message: 'Halo BersihBali, saya ingin pesan *Regular Home Cleaning* untuk area [Lokasi Anda].'
     },
     {
       icon: Sparkles,
@@ -38,7 +38,7 @@ function App() {
       description: 'Pembersihan mendalam mencakup kamar mandi, dapur, dan furnitur. Cocok untuk rumah yang lama tidak dibersihkan.',
       duration: '4 Hours',
       price: 'Rp 300.000',
-      message: 'Halo BersihBali 👋, saya ingin pesan *Deep Cleaning* untuk area [Lokasi Anda].'
+      message: 'Halo BersihBali, saya ingin pesan *Deep Cleaning* untuk area [Lokasi Anda].'
     },
     {
       icon: Building2,
@@ -47,7 +47,7 @@ function App() {
       duration: '3 Hours',
       price: 'Rp 250.000',
       popular: true,
-      message: 'Halo BersihBali 👋, saya ingin pesan *Villa/Airbnb Cleaning* untuk area [Lokasi Anda].'
+      message: 'Halo BersihBali, saya ingin pesan *Villa/Airbnb Cleaning* untuk area [Lokasi Anda].'
     },
     {
       icon: Package,
@@ -55,7 +55,7 @@ function App() {
       description: 'Paket lengkap untuk pindahan rumah atau kantor. Termasuk deep clean total dan poles furnitur agar siap huni.',
       duration: '5 Hours',
       price: 'Rp 400.000',
-      message: 'Halo BersihBali 👋, saya ingin pesan *Move-In/Move-Out Cleaning* untuk area [Lokasi Anda].'
+      message: 'Halo BersihBali, saya ingin pesan *Move-In/Move-Out Cleaning* untuk area [Lokasi Anda].'
     },
     {
       icon: Shirt,
@@ -63,7 +63,7 @@ function App() {
       description: 'Cuci dan setrika linen, sprei, dan handuk dengan layanan antar-jemput 24 jam. Praktis untuk villa dan Airbnb.',
       duration: 'Per Kg',
       price: 'Rp 20.000',
-      message: 'Halo BersihBali 👋, saya ingin pesan *Laundry & Linen* untuk area [Lokasi Anda].'
+      message: 'Halo BersihBali, saya ingin pesan *Laundry & Linen* untuk area [Lokasi Anda].'
     }
   ];
 
@@ -111,7 +111,7 @@ function App() {
     }
   ];
 
-  const defaultWhatsAppMessage = 'Halo BersihBali 👋, saya mau booking jasa cleaning untuk area [tulis area Anda] pada tanggal [tanggal].';
+  const defaultWhatsAppMessage = 'Halo BersihBali, saya mau booking jasa cleaning untuk area [tulis area Anda] pada tanggal [tanggal].';
 
   return (
     <div className="min-h-screen bg-white font-poppins">
