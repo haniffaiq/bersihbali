@@ -49,22 +49,22 @@ function App() {
       popular: true,
       message: 'Halo BersihBali, saya ingin pesan *Villa/Airbnb Cleaning* untuk area [Lokasi Anda].'
     },
-    {
-      icon: Package,
-      title: 'Move-In / Move-Out Cleaning',
-      description: 'Paket lengkap untuk pindahan rumah atau kantor. Termasuk deep clean total dan poles furnitur agar siap huni.',
-      duration: '5 Hours',
-      price: 'Rp 400.000',
-      message: 'Halo BersihBali, saya ingin pesan *Move-In/Move-Out Cleaning* untuk area [Lokasi Anda].'
-    },
-    {
-      icon: Shirt,
-      title: 'Laundry & Linen',
-      description: 'Cuci dan setrika linen, sprei, dan handuk dengan layanan antar-jemput 24 jam. Praktis untuk villa dan Airbnb.',
-      duration: 'Per Kg',
-      price: 'Rp 20.000',
-      message: 'Halo BersihBali, saya ingin pesan *Laundry & Linen* untuk area [Lokasi Anda].'
-    }
+    // {
+    //   icon: Package,
+    //   title: 'Move-In / Move-Out Cleaning',
+    //   description: 'Paket lengkap untuk pindahan rumah atau kantor. Termasuk deep clean total dan poles furnitur agar siap huni.',
+    //   duration: '5 Hours',
+    //   price: 'Rp 400.000',
+    //   message: 'Halo BersihBali, saya ingin pesan *Move-In/Move-Out Cleaning* untuk area [Lokasi Anda].'
+    // },
+    // {
+    //   icon: Shirt,
+    //   title: 'Laundry & Linen',
+    //   description: 'Cuci dan setrika linen, sprei, dan handuk dengan layanan antar-jemput 24 jam. Praktis untuk villa dan Airbnb.',
+    //   duration: 'Per Kg',
+    //   price: 'Rp 20.000',
+    //   message: 'Halo BersihBali, saya ingin pesan *Laundry & Linen* untuk area [Lokasi Anda].'
+    // }
   ];
 
   const features = [
@@ -274,7 +274,7 @@ function App() {
                   <td className="px-6 py-4 text-green-accent font-bold text-xl">Rp 250.000</td>
                   <td className="px-6 py-4 text-gray-600">Guest-ready preparation</td>
                 </tr>
-                <tr className="hover:bg-sand/30 transition-colors">
+                {/* <tr className="hover:bg-sand/30 transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-900">Move-in / Move-out</td>
                   <td className="px-6 py-4 text-gray-600">5 Hours</td>
                   <td className="px-6 py-4 text-turquoise font-bold text-xl">Rp 400.000</td>
@@ -285,7 +285,7 @@ function App() {
                   <td className="px-6 py-4 text-gray-600">Per Kg</td>
                   <td className="px-6 py-4 text-turquoise font-bold text-xl">Rp 20.000</td>
                   <td className="px-6 py-4 text-gray-600">Pickup and return within 24 hours</td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>
