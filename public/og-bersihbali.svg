@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F7F1E3"/>
+  <rect x="70" y="70" width="1060" height="490" rx="36" fill="#ffffff"/>
+  <circle cx="980" cy="170" r="92" fill="#33C4B3" opacity=".22"/>
+  <circle cx="1020" cy="462" r="126" fill="#4CAF50" opacity=".16"/>
+  <path d="M190 178l38 100 102 40-102 39-38 101-38-101-102-39 102-40 38-100z" fill="#33C4B3"/>
+  <text x="370" y="230" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700" fill="#111827">BersihBali</text>
+  <text x="370" y="305" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#374151">Professional Cleaning Service in Bali</text>
+  <text x="370" y="378" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#111827">Villa cleaning, home cleaning, deep cleaning</text>
+  <text x="370" y="436" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#111827">Transparent pricing. Instant WhatsApp booking.</text>
+  <rect x="370" y="480" width="310" height="62" rx="31" fill="#4CAF50"/>
+  <text x="410" y="522" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#ffffff">Book via WhatsApp</text>
+</svg>

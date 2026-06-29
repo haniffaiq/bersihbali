@@ -1,0 +1,16 @@
+{
+  "name": "BersihBali",
+  "short_name": "BersihBali",
+  "description": "Professional cleaning service in Bali with WhatsApp booking.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#33C4B3",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}

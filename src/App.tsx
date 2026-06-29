@@ -29,41 +29,41 @@ function App() {
       title: 'Guest Room',
       description: 'Deep cleaning guest room berdasarkan ukuran ruangan.',
       size: 'Range',
-      price: 'IDR 577.500,00 - 1.039.500,00',
-      message: 'Halo BersihBali, saya ingin booking *Deep Cleaning - Guest Room*. Range harga: IDR 577.500,00 - 1.039.500,00. Ukuran: [S/M/L], Lokasi: [Lokasi Anda], Tanggal: [Tanggal].'
+      price: 'IDR 2.887.500,00 - 5.197.500,00',
+      message: 'Halo BersihBali, saya ingin booking *Deep Cleaning - Guest Room*. Range harga: IDR 2.887.500,00 - 5.197.500,00. Ukuran: [S/M/L], Lokasi: [Lokasi Anda], Tanggal: [Tanggal].'
     },
     {
       icon: Package,
       title: 'Kitchen',
       description: 'Deep cleaning dapur berdasarkan ukuran area.',
       size: 'Range',
-      price: 'IDR 412.500,00 - 605.000,00',
-      message: 'Halo BersihBali, saya ingin booking *Deep Cleaning - Kitchen*. Range harga: IDR 412.500,00 - 605.000,00. Ukuran: [Small/Medium/Large], Lokasi: [Lokasi Anda], Tanggal: [Tanggal].'
+      price: 'IDR 2.062.500,00 - 3.025.000,00',
+      message: 'Halo BersihBali, saya ingin booking *Deep Cleaning - Kitchen*. Range harga: IDR 2.062.500,00 - 3.025.000,00. Ukuran: [Small/Medium/Large], Lokasi: [Lokasi Anda], Tanggal: [Tanggal].'
     },
     {
       icon: Shirt,
       title: 'Bath Room',
       description: 'Deep cleaning kamar mandi berdasarkan ukuran area.',
       size: 'Range',
-      price: 'IDR 385.000,00 - 605.000,00',
-      message: 'Halo BersihBali, saya ingin booking *Deep Cleaning - Bath Room*. Range harga: IDR 385.000,00 - 605.000,00. Ukuran: [Small/Medium/Large], Lokasi: [Lokasi Anda], Tanggal: [Tanggal].'
+      price: 'IDR 1.925.000,00 - 3.025.000,00',
+      message: 'Halo BersihBali, saya ingin booking *Deep Cleaning - Bath Room*. Range harga: IDR 1.925.000,00 - 3.025.000,00. Ukuran: [Small/Medium/Large], Lokasi: [Lokasi Anda], Tanggal: [Tanggal].'
     },
     {
       icon: Building2,
       title: 'House / Villa / Apartment',
       description: 'Deep cleaning rumah/villa/apartment berdasarkan luas bangunan.',
       size: 'Range',
-      price: 'IDR 2.200.000,00 - 6.600.000,00',
+      price: 'IDR 11.000.000,00 - 33.000.000,00',
       popular: true,
-      message: 'Halo BersihBali, saya ingin booking *Deep Cleaning - House/Villa/Apartment*. Range harga: IDR 2.200.000,00 - 6.600.000,00. Luas: [m2], Lokasi: [Lokasi Anda], Tanggal: [Tanggal].'
+      message: 'Halo BersihBali, saya ingin booking *Deep Cleaning - House/Villa/Apartment*. Range harga: IDR 11.000.000,00 - 33.000.000,00. Luas: [m2], Lokasi: [Lokasi Anda], Tanggal: [Tanggal].'
     },
     {
       icon: Sparkles,
       title: 'Special Cleaning',
       description: 'Layanan khusus (mattress, poles, kristalisasi, dll).',
       size: 'Range',
-      price: 'IDR 49.500,00 - 385.000,00',
-      message: 'Halo BersihBali, saya ingin booking *Special Cleaning*. Range harga: IDR 49.500,00 - 385.000,00 (High Risk: based on site). Layanan: [jenis layanan], Lokasi: [Lokasi Anda], Tanggal: [Tanggal].'
+      price: 'IDR 247.500,00 - 1.925.000,00',
+      message: 'Halo BersihBali, saya ingin booking *Special Cleaning*. Range harga: IDR 247.500,00 - 1.925.000,00 (High Risk: based on site). Layanan: [jenis layanan], Lokasi: [Lokasi Anda], Tanggal: [Tanggal].'
     }
   ];
 
@@ -114,28 +114,37 @@ function App() {
   const defaultWhatsAppMessage = 'Halo BersihBali, saya mau booking jasa cleaning berdasarkan pricelist. Area: [tulis area Anda], Tanggal: [tanggal].';
 
   const pricingRows = [
-    { category: 'Guest Room', size: 'S (6-15m2)', price: 'IDR 577.500,00', notes: '-' },
-    { category: 'Guest Room', size: 'M (16-25m2)', price: 'IDR 852.500,00', notes: '-' },
-    { category: 'Guest Room', size: 'L (26-50m2)', price: 'IDR 1.039.500,00', notes: '-' },
-    { category: 'Kitchen', size: 'Small (0-4m2)', price: 'IDR 412.500,00', notes: '-' },
-    { category: 'Kitchen', size: 'Medium (4-7m2)', price: 'IDR 495.000,00', notes: '-' },
-    { category: 'Kitchen', size: 'Large (7-12m2)', price: 'IDR 605.000,00', notes: '-' },
-    { category: 'Bath Room', size: 'Small (0-3m2)', price: 'IDR 385.000,00', notes: '-' },
-    { category: 'Bath Room', size: 'Medium (3-6m2)', price: 'IDR 495.000,00', notes: '-' },
-    { category: 'Bath Room', size: 'Large (6-10m2)', price: 'IDR 605.000,00', notes: '-' },
-    { category: 'House/Villa/Apartment', size: '0-100m2', price: 'IDR 2.200.000,00', notes: '-' },
-    { category: 'House/Villa/Apartment', size: '100-200m2', price: 'IDR 3.960.000,00', notes: '-' },
-    { category: 'House/Villa/Apartment', size: '200-300m2', price: 'IDR 6.050.000,00', notes: '-' },
-    { category: 'House/Villa/Apartment', size: '300-450m2', price: 'IDR 6.600.000,00', notes: '-' },
-    { category: 'Special Cleaning', size: 'Mattrass Cleaning 360 (King)', price: 'IDR 385.000,00', notes: 'All side' },
-    { category: 'Special Cleaning', size: 'Mattrass Cleaning 360 (Queen)', price: 'IDR 368.500,00', notes: 'All side' },
-    { category: 'Special Cleaning', size: 'Mattrass Cleaning 360 (Single)', price: 'IDR 275.000,00', notes: 'All side' },
-    { category: 'Special Cleaning', size: 'Poles Lantai / m2', price: 'IDR 49.500,00', notes: 'Per m2' },
-    { category: 'Special Cleaning', size: 'Kristalisasi Lantai / m2', price: 'IDR 104.500,00', notes: 'Marmer/Granite/Teraso' },
-    { category: 'Special Cleaning', size: 'Cuci Korden / m2', price: 'IDR 93.500,00', notes: 'Per m2' },
-    { category: 'Special Cleaning', size: 'Cuci Karpet / m2', price: 'IDR 104.500,00', notes: 'Per m2' },
-    { category: 'Special Cleaning', size: 'Cuci Sofa / Seater', price: 'IDR 104.500,00', notes: 'Per seater' },
+    { category: 'Guest Room', size: 'S (6-15m2)', price: 'IDR 2.887.500,00', notes: '-' },
+    { category: 'Guest Room', size: 'M (16-25m2)', price: 'IDR 4.262.500,00', notes: '-' },
+    { category: 'Guest Room', size: 'L (26-50m2)', price: 'IDR 5.197.500,00', notes: '-' },
+    { category: 'Kitchen', size: 'Small (0-4m2)', price: 'IDR 2.062.500,00', notes: '-' },
+    { category: 'Kitchen', size: 'Medium (4-7m2)', price: 'IDR 2.475.000,00', notes: '-' },
+    { category: 'Kitchen', size: 'Large (7-12m2)', price: 'IDR 3.025.000,00', notes: '-' },
+    { category: 'Bath Room', size: 'Small (0-3m2)', price: 'IDR 1.925.000,00', notes: '-' },
+    { category: 'Bath Room', size: 'Medium (3-6m2)', price: 'IDR 2.475.000,00', notes: '-' },
+    { category: 'Bath Room', size: 'Large (6-10m2)', price: 'IDR 3.025.000,00', notes: '-' },
+    { category: 'House/Villa/Apartment', size: '0-100m2', price: 'IDR 11.000.000,00', notes: '-' },
+    { category: 'House/Villa/Apartment', size: '100-200m2', price: 'IDR 19.800.000,00', notes: '-' },
+    { category: 'House/Villa/Apartment', size: '200-300m2', price: 'IDR 30.250.000,00', notes: '-' },
+    { category: 'House/Villa/Apartment', size: '300-450m2', price: 'IDR 33.000.000,00', notes: '-' },
+    { category: 'Special Cleaning', size: 'Mattrass Cleaning 360 (King)', price: 'IDR 1.925.000,00', notes: 'All side' },
+    { category: 'Special Cleaning', size: 'Mattrass Cleaning 360 (Queen)', price: 'IDR 1.842.500,00', notes: 'All side' },
+    { category: 'Special Cleaning', size: 'Mattrass Cleaning 360 (Single)', price: 'IDR 1.375.000,00', notes: 'All side' },
+    { category: 'Special Cleaning', size: 'Poles Lantai / m2', price: 'IDR 247.500,00', notes: 'Per m2' },
+    { category: 'Special Cleaning', size: 'Kristalisasi Lantai / m2', price: 'IDR 522.500,00', notes: 'Marmer/Granite/Teraso' },
+    { category: 'Special Cleaning', size: 'Cuci Korden / m2', price: 'IDR 467.500,00', notes: 'Per m2' },
+    { category: 'Special Cleaning', size: 'Cuci Karpet / m2', price: 'IDR 522.500,00', notes: 'Per m2' },
+    { category: 'Special Cleaning', size: 'Cuci Sofa / Seater', price: 'IDR 522.500,00', notes: 'Per seater' },
     { category: 'Special Cleaning', size: 'High Risk Cleaning', price: 'IDR -', notes: 'Base on site' }
+  ];
+
+  const seoLinks = [
+    { label: 'Deep Cleaning Villa Bali', href: '/seo/deep-cleaning-villa-bali.html' },
+    { label: 'Jasa Cleaning Canggu', href: '/seo/jasa-cleaning-canggu.html' },
+    { label: 'Villa Cleaning Seminyak', href: '/seo/villa-cleaning-seminyak.html' },
+    { label: 'Home Cleaning Ubud', href: '/seo/home-cleaning-ubud.html' },
+    { label: 'Cuci Sofa Bali', href: '/seo/cuci-sofa-bali.html' },
+    { label: 'Poles Lantai Bali', href: '/seo/poles-lantai-bali.html' }
   ];
 
   return (
@@ -387,7 +396,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Sparkles className="w-8 h-8 text-turquoise" />
@@ -402,7 +411,7 @@ function App() {
               <div className="space-y-3">
                 <a href={createWhatsAppLink(defaultWhatsAppMessage)} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 text-gray-400 hover:text-turquoise transition-colors">
                   <Phone className="w-5 h-5" />
-                  <span>+62 812-3456-7890</span>
+                  <span>+62 818-0545-6569</span>
                 </a>
                 <a href="mailto:support@bersihbali.com" className="flex items-center space-x-3 text-gray-400 hover:text-turquoise transition-colors">
                   <Mail className="w-5 h-5" />
@@ -419,6 +428,16 @@ function App() {
               <p className="text-gray-400">
                 Seminyak, Canggu, Ubud, Sanur, Denpasar, Uluwatu, and all across Bali
               </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold mb-4">Popular Services</h3>
+              <div className="space-y-2">
+                {seoLinks.map((link) => (
+                  <a key={link.href} href={link.href} className="block text-gray-400 hover:text-turquoise transition-colors">
+                    {link.label}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
